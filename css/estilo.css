@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: 'Calibri Light', Arial, sans-serif;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+}
+
+a {
+    text-decoration: none;
+}
+
+header#cabecalho {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    border-bottom: 3px solid black;
+}
+
+h1#titulo {
+    font-style: italic;
+    border: 3px solid black;
+    padding: 7px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+h1#titulo:hover {
+    transform: scale(1.2) rotate(5deg);
+    background-color: black;
+    color: white;
+}
+
+div#interface {
+    position: fixed;
+    width: 100%;
+    margin-top: 103px;
+    margin-bottom: 78px;
+    height: calc(100% - 181px);
+}
+
+div#conteudo {
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div#authentication {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+form#formCadastrar {
+    margin-left: 10%;
+}
+
+form fieldset {
+    font-size: 1.2em;
+    padding: 10px 15px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form fieldset div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form fieldset input {
+    font-size: 1.1em;
+}
+
+form fieldset legend {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+}
+
+form fieldset button {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    font-size: 1.2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer#rodape {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    border-top: 3px solid black;
+    font-size: 1.1em;
+}
+
+a.desenvolvedor {
+    font-size: 1.2em;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    background-color: black;
+}
+
+@media screen and (max-width: 600px) {
+    
+    
+    div#authentication {
+        flex-direction: column;
+        justify-content: unset;
+    }
+
+    form#formEntrar, form#formCadastrar {
+        width: 100%;
+        margin: 3%;
+    }
+
+    form fieldset {
+        margin: 0 5%;
+    }
+}
